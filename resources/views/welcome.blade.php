@@ -291,9 +291,8 @@
                 <span class="text">
                     <span class="title">Opskrifter.dk</span>
                     <span class="subtitle">
-                        <a href="http://opskrifter.dk.94-189-39-102.site-preview.dk/" target="_blank" class="link">
-                            Se test-site
-                        </a>
+                        Diverse rettelser og optimering.
+                        <a href="http://opskrifter.dk.94-189-39-102.site-preview.dk/" target="_blank" class="link">&nbsp;Se test-site</a>
                     </span>
                 </span>
             </div>
