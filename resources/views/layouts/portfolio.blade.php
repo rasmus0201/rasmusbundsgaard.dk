@@ -26,6 +26,9 @@
         gtag('js', new Date());
         gtag('config', 'UA-119184928-1');
     </script>
+    <script type="text/javascript">
+        base_url = '{{ URL::to('/') }}';
+    </script>
 </head>
 <body>
     <div id="app">
@@ -125,5 +128,33 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
     <script src="{{ asset('assets/js/app.js') }}"></script>
     @yield('scripts')
+
+    <script type="text/javascript">
+        $('a').on('click', function(e){
+            if (this.href.includes(base_url) && this.href.includes('#')) {
+                handleInboundLinkClicks(e);
+            } else {
+                handleOutboundLinkClicks(e);
+            }
+        });
+
+        function handleInboundLinkClicks(event) {
+            ga('send', 'event', {
+                eventCategory: 'Inbound Link',
+                eventAction: 'click',
+                eventLabel: event.target.href,
+                transport: 'beacon'
+            });
+        }
+
+        function handleOutboundLinkClicks(event) {
+            ga('send', 'event', {
+                eventCategory: 'Outbound Link',
+                eventAction: 'click',
+                eventLabel: event.target.href,
+                transport: 'beacon'
+            });
+        }
+    </script>
 </body>
 </html>
