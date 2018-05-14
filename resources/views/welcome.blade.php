@@ -326,12 +326,6 @@
                         Photoshop CC
                     </div>
                 </div>
-                <div class="progress progress-md">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
-                        <span class="d-none d-xl-block">3D-software (Autodesk Fusion 360)</span>
-                        <span class="d-xl-none">3D-software</span>
-                    </div>
-                </div>
             </div>
             <div class="col-md-5">
                 Jeg har arbejdet i HTML/CSS mere end 4 år, og jeg har holdt mig up-to-date med de nyeste tags og CSS-regler. Jeg er dog ikke en UI/UX Designer / Grafiker, og er meget mere interesseret i at arbejde i det bagvedliggende kode. Det er dermed ikke sagt jeg ikke kan, men det er bare ikke en spidskompetence, jeg kan også sagtens følge en skitse/ et design ned til mindste detalje. Jeg har også arbejdet lidt Adobe programmerne, samt noget 3D-modellering.
@@ -356,11 +350,6 @@
                     <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
                         <span class="d-none d-xl-block">Wordpress. Opsætning, Tema og Plugin-udvikling.</span>
                         <span class="d-xl-none">Wordpress</span>
-                    </div>
-                </div>
-                <div class="progress progress-md mb-3">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="40">
-                        Swift
                     </div>
                 </div>
                 <div class="progress progress-md mb-3">
