@@ -17,6 +17,15 @@
     <link href="{{ asset('assets/css/fontawesome-all.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/app.css') }}" rel="stylesheet">
     @yield('styles')
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119184928-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-119184928-1');
+    </script>
 </head>
 <body>
     <div id="app">
