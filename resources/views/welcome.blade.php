@@ -287,11 +287,13 @@
                 </span>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 reference">
-                <span class="img" style="background-image: url({{ asset('assets/images/case-mo.jpg') }});"></span>
+                <span class="img" style="background-image: url({{ asset('assets/images/case-op.jpg') }});"></span>
                 <span class="text">
-                    <span class="title">Mollys.dk</span>
+                    <span class="title">Opskrifter.dk</span>
                     <span class="subtitle">
-                        Rettelser
+                        <a href="http://opskrifter.dk.94-189-39-102.site-preview.dk/" target="_blank" class="link">
+                            Se test-site
+                        </a>
                     </span>
                 </span>
             </div>
