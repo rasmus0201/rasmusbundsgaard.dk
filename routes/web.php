@@ -14,5 +14,3 @@
 Auth::routes();
 
 Route::get('/', 'PortfolioController@index')->name('start');
-
-//Route::get('/home', 'HomeController@index')->name('home');
