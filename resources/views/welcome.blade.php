@@ -187,7 +187,6 @@
 
     <div class="container-fluid">
         <div class="row">
-        {{-- <div class="row p-0"> --}}
             <div class="col-lg-4 col-md-6 col-sm-12 reference" >
                 <span class="img" style="background-image: url({{ asset('assets/images/case-pp.jpg') }});"></span>
                 <span class="text">
@@ -215,8 +214,6 @@
                     </span>
                 </span>
             </div>
-        {{-- </div>
-        <div class="row p-0"> --}}
             <div class="col-lg-4 col-md-6 col-sm-12 reference">
                 <span class="img" style="background-image: url({{ asset('assets/images/case-sw.png') }});"></span>
                 <span class="text">
@@ -248,8 +245,6 @@
                     </span>
                 </span>
             </div>
-        {{-- </div>
-        <div class="row p-0"> --}}
             <div class="col-lg-4 col-md-6 col-sm-12 reference">
                 <span class="img" style="background-image: url({{ asset('assets/images/case-ap.png') }});"></span>
                 <span class="text">
@@ -264,15 +259,6 @@
 
                 </span>
             </div>
-            {{-- <div class="col-md-4 reference">
-                <span class="img" style="background-image: url({{ asset('assets/images/case-pk.jpg') }});"></span>
-                <span class="text">
-                    <span class="title">Peugeot kværn</span>
-                    <span class="subtitle">
-                        Rettelser
-                    </span>
-                </span>
-            </div> --}}
             <div class="col-lg-4 col-md-6 col-sm-12 reference">
                 <span class="img" style="background-image: url({{ asset('assets/images/theme-memoo.png') }});"></span>
                 <span class="text">
@@ -296,7 +282,6 @@
                     </span>
                 </span>
             </div>
-        {{-- </div> --}}
         </div>
     </div>
 
@@ -305,22 +290,7 @@
             <div class="col-md-12">
                 <a href="{{ asset('documents/anbefaling-memoo.dk.pdf') }}" target="_blank" class="btn btn-primary btn-block py-3">Se anbefaling fra Memoo.dk</a>
             </div>
-            {{--<div class="col-md-6">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="{{ asset('documents/anbefaling-memoo.dk.pdf') }}" target="_blank">Se anbefaling fra Memoo.dk</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <div class="card">
-                    <div class="card-body text-center">
-                        <a href="{{ asset('documents/anbefaling-vestjyskmarketing.dk.pdf') }}" target="_blank">Se anbefaling fra Vestjyskmarketing.dk</a>
-                    </div>
-                </div>
-            </div> --}}
         </div>
-        {{-- <h3 class="my-3 font-italic">&hellip; Og mange flere</h3> --}}
     </div>
 </section>
 
