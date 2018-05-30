@@ -353,13 +353,15 @@
                     </div>
                 </div>
                 <div class="progress progress-md mb-3">
-                    <div class="progress-bar bg-warning" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="30">
-                        Vue.js
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="30">
+                        Linux
                     </div>
                 </div>
             </div>
             <div class="col-md-5">
                 Jeg arbejder bedst i PHP med Laravel som Framework eller Wordpress CMS. Jeg har også arbejdet med versionsstyring (Git). Jeg synes det er sjovt at lære nye teknologier, og vil gerne lære at lave Apps, eller Desktop Software.
+                <br><br>
+                Jeg har også god erfaring med Linux. Denne side er hostet på VPS hos Digital Ocean med Ubuntu Server.
             </div>
         </div>
     </div>
