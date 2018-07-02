@@ -237,7 +237,7 @@
                 </span>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 reference">
-                <span class="img" style="background-image: url({{ asset('assets/images/case-pk.png') }});"></span>
+                <span class="img" style="background-image: url({{ asset('assets/images/case-pk.jpg') }});"></span>
                 <span class="text">
                     <span class="title">Peugeotkvaern.dk</span>
                     <span class="subtitle">
