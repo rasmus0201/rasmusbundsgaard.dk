@@ -237,26 +237,12 @@
                 </span>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 reference">
-                <span class="img" style="background-image: url({{ asset('assets/images/case-ja.png') }});"></span>
+                <span class="img" style="background-image: url({{ asset('assets/images/case-pk.png') }});"></span>
                 <span class="text">
-                    <span class="title">JetAdvice.com</span>
+                    <span class="title">Peugeotkvaern.dk</span>
                     <span class="subtitle">
-                        Responsiv, rettelser, 404-side, optimering
+                        Responsiv, rettelser, menu, optimering
                     </span>
-                </span>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-12 reference">
-                <span class="img" style="background-image: url({{ asset('assets/images/case-ap.png') }});"></span>
-                <span class="text">
-                    <span class="title">Ap-pe.dk</span>
-                    <span class="subtitle">
-                        Dynamisk og interaktiv prisberegner. Rettelser til øvrige dele af siden.
-                        <a href="https://github.com/rasmus0201/wp-calculator" target="_blank" class="link github">
-                            <i class="fab fa-github"></i>
-                            Se plugin på GitHub
-                        </a>
-                    </span>
-
                 </span>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-12 reference">
@@ -280,6 +266,20 @@
                         Diverse rettelser og optimering.
                         <a href="http://opskrifter.dk.94-189-39-102.site-preview.dk/" target="_blank" class="link">&nbsp;Se test-site</a>
                     </span>
+                </span>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 reference">
+                <span class="img" style="background-image: url({{ asset('assets/images/case-ap.png') }});"></span>
+                <span class="text">
+                    <span class="title">Ap-pe.dk</span>
+                    <span class="subtitle">
+                        Dynamisk og interaktiv prisberegner. Rettelser til øvrige dele af siden.
+                        <a href="https://github.com/rasmus0201/wp-calculator" target="_blank" class="link github">
+                            <i class="fab fa-github"></i>
+                            Se plugin på GitHub
+                        </a>
+                    </span>
+
                 </span>
             </div>
         </div>
