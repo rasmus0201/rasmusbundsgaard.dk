@@ -29,9 +29,8 @@
                     Om mig
                 </p>
                 <p>
-                    Jeg hedder Rasmus, er 18 år gammel og så er jeg tosset med programmering. Til daglig går jeg på Skjern Tekniske Skole på EUX med IT/Data som erhvervsfaglig retning.
-                    Udover det bor jeg sammen med min kæreste, hvor vi hygger meget med de daglige "pligter". Jeg kan desuden også godt lide at cykle, løbe og træne i fitnesscenter.
-                    Til sommer flytter jeg til Odense, da både min kæreste og jeg skal studere der.
+                    Jeg hedder Rasmus, er 18 år gammel og så er jeg tosset med programmering. Til daglig går jeg på Odense Erhvervsskole, som Datatekniker studerende - med speciale i programmering. Hvis jeg ikke er på skolen er jeg på Ordbogen A/S hvor jeg er ansat som datatekniker elev.
+                    Udover det bor jeg sammen med min kæreste i Odense, hvor vi hygger meget med de daglige "pligter". Jeg kan desuden også godt lide at cykle, løbe og træne i fitnesscenter.
                 </p>
                 <p>
                     Jeg er en stille og rolig type. Jeg har også egen virksomhed sammen med min storebror, hvor vi driver en webshop - <a href="https://slikworld.dk" target="_blank" class="btn-link">Slikworld.dk</a>. Den har vi haft siden 2015.
