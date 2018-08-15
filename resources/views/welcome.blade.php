@@ -29,11 +29,11 @@
                     Om mig
                 </p>
                 <p>
-                    Jeg hedder Rasmus, er 18 år gammel og så er jeg tosset med programmering. Til daglig går jeg på Odense Erhvervsskole, som Datatekniker studerende - med speciale i programmering. Hvis jeg ikke er på skolen er jeg på Ordbogen A/S hvor jeg er ansat som datatekniker elev.
+                    Jeg hedder Rasmus, er <?php echo  (date('Y') - 2000); ?> år gammel og så er jeg tosset med programmering. Til daglig går jeg på Odense Erhvervsskole, som Datatekniker studerende - med speciale i programmering. Hvis jeg ikke er på skolen er jeg på Ordbogen A/S hvor jeg er ansat som datatekniker elev.
                     Udover det bor jeg sammen med min kæreste i Odense, hvor vi hygger meget med de daglige "pligter". Jeg kan desuden også godt lide at cykle, løbe og træne i fitnesscenter.
                 </p>
                 <p>
-                    Jeg er en stille og rolig type. Jeg har også egen virksomhed sammen med min storebror, hvor vi driver en webshop - <a href="https://slikworld.dk" target="_blank" class="btn-link">Slikworld.dk</a>. Den har vi haft siden 2015.
+                    Jeg er en stille og rolig type. Jeg har også haft egen virksomhed i 3 år sammen med min storebror, hvor vi har drevet en webshop - <a href="https://slikworld.dk" target="_blank" class="btn-link">Slikworld.dk</a>. Vi startede webshoppen i 2015 og valgte at sælge den i 2018, grundet manglende tid og interesse.
                     I virksomheden har jeg stået for hjemmesiden, integrationer, regnskab og bogføring.
                 </p>
                 <p>
@@ -55,7 +55,7 @@
                     Siden da har jeg lavet utallige små projekter, enten hvor jeg har fulgt med på en tutorial, en anden idé min bror og jeg har haft, eller noget jeg selv ville prøve. Jeg har også været i gang med at lære Laravel, som jeg synes er et super framework, samt Wordpress CMS. Jeg har også lært Bootstrap og andre CSS frameworks.
                 </p>
                 <p>
-                    Udover PHP har jeg også været i gang med Swift (iOS), Java - (Android Studio), Python, C++ (Arduino), Vue.js
+                    Udover PHP har jeg også været i gang med Swift (iOS), Java - (Android Studio), Python, C++ (Arduino), C# & Vue.js
                 </p>
             </div>
         </div>
@@ -285,7 +285,7 @@
                     <span class="title">Opskrifter.dk</span>
                     <span class="subtitle">
                         Diverse rettelser og optimering.
-                        <a href="http://opskrifter.dk.94-189-39-102.site-preview.dk/" target="_blank" class="link">&nbsp;Se test-site</a>
+                        <a href="https://memoo.opskrifter.dk/" target="_blank" class="link">Se test-site</a>
                     </span>
                 </span>
             </div>
@@ -349,7 +349,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                Jeg har arbejdet i HTML/CSS mere end 4 år, og jeg har holdt mig up-to-date med de nyeste tags og CSS-regler. Jeg er dog ikke en UI/UX Designer / Grafiker, og er meget mere interesseret i at arbejde i det bagvedliggende kode. Det er dermed ikke sagt jeg ikke kan, men det er bare ikke en spidskompetence, jeg kan også sagtens følge en skitse/ et design ned til mindste detalje. Jeg har også arbejdet lidt Adobe programmerne, samt noget 3D-modellering.
+                Jeg har arbejdet med HTML/CSS mere end <?php echo  (date('Y') - 2014); ?> år, og jeg har holdt mig up-to-date med de nyeste tags og CSS-regler. Jeg er dog ikke en UI/UX Designer / Grafiker, og er meget mere interesseret i at arbejde i det bagvedliggende kode. Det er dermed ikke sagt jeg ikke kan, men det er bare ikke en spidskompetence, jeg kan også sagtens følge en skitse/ et design ned til mindste detalje. Jeg har også arbejdet lidt Adobe programmerne, samt noget 3D-modellering.
             </div>
         </div>
         <div class="row mb-5">
@@ -380,7 +380,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                Jeg arbejder bedst i PHP med Laravel som Framework eller Wordpress CMS. Jeg har også arbejdet med versionsstyring (Git). Jeg synes det er sjovt at lære nye teknologier, og vil gerne lære at lave Apps, eller Desktop Software.
+                Jeg arbejder bedst i PHP med Laravel som Framework eller Wordpress CMS. Jeg har også arbejdet med versionsstyring (Git). Jeg synes det er sjovt at lære nye teknologier, og vil gerne lære at lave Apps, eller Desktop Software. Jeg har programmeret i PHP siden slutning af 2013.
                 <br><br>
                 Jeg har også god erfaring med Linux. Denne side er hostet på VPS hos Digital Ocean med Ubuntu Server.
             </div>
