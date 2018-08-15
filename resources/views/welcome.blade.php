@@ -114,7 +114,7 @@
                                 <h4>Slikworld.dk / Jellybeans.dk</h4>
                                 <h6>
                                     <i class="far fa-calendar"></i>
-                                    Jun 2015 - Nu
+                                    Jun 2015 - Maj 2018
                                 </h6>
                             </div>
                             <p>Egen virksomhed sammen med min storebror Emil. Over 5000 sendte ordrer.</p>
