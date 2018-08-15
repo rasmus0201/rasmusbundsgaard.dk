@@ -71,10 +71,20 @@
                     <div class="exp-holder">
                         <div class="exp">
                             <div class="hgroup">
+                                <h4>Ordbogen A/S</h4>
+                                <h6>
+                                    <i class="far fa-calendar"></i>
+                                    Aug 2018 - Nu
+                                </h6>
+                            </div>
+                            <p>Ansat som elev i udviklingsafdelingen.</p>
+                        </div>
+                        <div class="exp">
+                            <div class="hgroup">
                                 <h4>Vestjysk Marketing A/S</h4>
                                 <h6>
                                     <i class="far fa-calendar"></i>
-                                    Nov 2017 - Nu
+                                    Nov 2017 - Mar 2018
                                 </h6>
                             </div>
                             <p>Ansat som webudvikler, med et par timer i ugen.</p>
@@ -136,6 +146,18 @@
             <div class="col-md-12 col-lg-6 p-0 pl-4">
                 <div class="timeline education">
                     <div class="exp-holder">
+                        <div class="exp">
+                            <div class="hgroup">
+                                <h4>Syddansk Erhvervsskole - Odense</h4>
+                                <h6>
+                                    <i class="far fa-calendar"></i>
+                                    Aug 2018 - Nu
+                                </h6>
+                            </div>
+                            <p>
+                                Begyndte hovedforløb som EUX Datatekniker med speciale i programmering.
+                            </p>
+                        </div>
                         <div class="exp">
                             <div class="hgroup">
                                 <h4>Skjern Tekniske Skole</h4>

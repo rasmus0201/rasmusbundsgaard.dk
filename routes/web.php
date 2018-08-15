@@ -11,6 +11,7 @@
 |
 */
 
-Auth::routes();
+#Disable authentication/user module
+#Auth::routes();
 
 Route::get('/', 'PortfolioController@index')->name('start');
