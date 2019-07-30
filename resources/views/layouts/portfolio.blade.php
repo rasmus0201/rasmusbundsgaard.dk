@@ -34,7 +34,7 @@
         gtag('js', new Date());
 
         @if(!isset($experiments))
-            gtag('config', config('services.ga.uaid'), { 'optimize_id': config('services.ga.optimize_id')});
+            gtag('config', '{{ config('services.ga.uaid') }}', { 'optimize_id': '{{ config('services.ga.optimize_id') }}'});
         @endif
 
         @isset($experiments)
@@ -47,7 +47,7 @@
                 }, $experiments)
             )
 
-            gtag('config', config('services.ga.uaid'), {experiments: @json($filteredExperiments)});
+            gtag('config', '{{ config('services.ga.uaid') }}', {experiments: @json($filteredExperiments)});
         @endisset
     </script>
     <script type="text/javascript">
