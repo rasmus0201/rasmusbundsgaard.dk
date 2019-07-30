@@ -32,7 +32,7 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-119184928-1');
+        gtag('config', 'UA-119184928-1', { 'optimize_id': 'GTM-MZXB3DP'});
     </script>
     <script type="text/javascript">
         base_url = '{{ URL::to('/') }}';
@@ -56,17 +56,20 @@
             </div>
 
             <div id="sidebar-contact">
-                <a href="mailto:rasmus@it-lease.dk">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:inbound', 'event_label': 'Mail' })" href="mailto:rasmus@it-lease.dk">
                     <i class="fal fa-envelope"></i>
                 </a>
-                <a href="tel:+4531755650">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:inbound', 'event_label': 'Phone' })" href="tel:+4531755650">
                     <i class="fal fa-phone"></i>
                 </a>
-                <a href="https://www.facebook.com/RBundsgaard" target="_blank">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:outbound', 'event_label': 'Facebook' })" href="https://www.facebook.com/RBundsgaard" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                 </a>
-                <a href="https://github.com/rasmus0201" target="_blank">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:outbound', 'event_label': 'Github' })" href="https://github.com/rasmus0201" target="_blank">
                     <i class="fab fa-github"></i>
+                </a>
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:outbound', 'event_label': 'LinkedIn' })" href="https://www.linkedin.com/in/rasmus-bundsgaard/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
                 </a>
             </div>
         </div>
@@ -124,10 +127,6 @@
         <div id="content">
             @yield('content')
         </div>
-
-        {{-- <div id="content-easteregg" class="hidden">
-            <div class="section">Hejsa</div>
-        </div> --}}
     </div>
 
     <!-- Scripts -->
@@ -139,6 +138,14 @@
 
     <script type="text/javascript">
         $('a').on('click', function(e){
+            var attr = $(this).attr('onclick');
+
+            // For some browsers, `attr` is undefined; for others,
+            // `attr` is false.  Check for both.
+            if (typeof attr !== typeof undefined && attr !== false) {
+                return;
+            }
+
             if (this.href.includes(base_url) && this.href.includes('#')) {
                 handleInboundLinkClicks(e);
             } else {
