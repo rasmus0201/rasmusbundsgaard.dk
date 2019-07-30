@@ -35,4 +35,17 @@ return [
         'secret' => env('STRIPE_SECRET'),
     ],
 
+    'ga' => [
+        'uaid' => env('GA_UA_ID'),
+        'optimize_id' => env('GA_OPTIMIZE_ID'),
+
+        'experiments' => [ // This only supports A/B/n tests
+            'start' => [ // array key is the route name
+                'view' => 'welcome', // If variant==0 then it's just the originial otherwise "-$variant" is appended.
+                'id' => env('GA_EXPERIMENT_ID'),
+                'variants' => [0, 1]
+            ],
+        ],
+    ],
+
 ];

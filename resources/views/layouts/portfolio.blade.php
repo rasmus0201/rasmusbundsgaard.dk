@@ -32,7 +32,23 @@
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-        gtag('config', 'UA-119184928-1', { 'optimize_id': 'GTM-MZXB3DP'});
+
+        @if(!isset($experiments))
+            gtag('config', config('services.ga.uaid'), { 'optimize_id': config('services.ga.optimize_id')});
+        @endif
+
+        @isset($experiments)
+            @php(
+                $filteredExperiments = array_map(function($x) {
+                    return [
+                        'id' => $x['id'],
+                        'variant' => $x['variant']
+                    ];
+                }, $experiments)
+            )
+
+            gtag('config', config('services.ga.uaid'), {experiments: @json($filteredExperiments)});
+        @endisset
     </script>
     <script type="text/javascript">
         base_url = '{{ URL::to('/') }}';
