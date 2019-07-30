@@ -398,25 +398,25 @@
 
         <div class="row mt-5">
             <div class="contact-btn col-lg-3 col-md-6 col-sm-12">
-                <a class="btn btn-primary btn-rounded px-4" href="mailto:rasmus@it-lease.dk">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:inbound', 'event_label': 'Mail' })" class="btn btn-primary btn-rounded px-4" href="mailto:rasmus@it-lease.dk">
                     <i class="fal fa-envelope"></i>
                     rasmus@it-lease.dk
                 </a>
             </div>
             <div class="contact-btn col-lg-3 col-md-6 col-sm-12">
-                <a class="btn btn-primary btn-rounded px-4" href="tel:+4531755650">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:inbound', 'event_label': 'Phone' })" class="btn btn-primary btn-rounded px-4" href="tel:+4531755650">
                     <i class="fal fa-phone"></i>
                     31 75 56 50
                 </a>
             </div>
             <div class="contact-btn col-lg-3 col-md-6 col-sm-12">
-                <a class="btn btn-primary btn-rounded px-4" href="https://www.facebook.com/RBundsgaard" target="_blank">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:outbound', 'event_label': 'Facebook' })" class="btn btn-primary btn-rounded px-4" href="https://www.facebook.com/RBundsgaard" target="_blank">
                     <i class="fab fa-facebook-f"></i>
                     Rasmus Bundsgaard
                 </a>
             </div>
             <div class="contact-btn col-lg-3 col-md-6 col-sm-12">
-                <a class="btn btn-primary btn-rounded px-4" href="https://www.linkedin.com/in/rasmus-bundsgaard/" target="_blank">
+                <a onclick="gtag('event', 'click', { 'event_category': 'contact:outbound', 'event_label': 'LinkedIn' })" class="btn btn-primary btn-rounded px-4" href="https://www.linkedin.com/in/rasmus-bundsgaard/" target="_blank">
                     <i class="fab fa-linkedin"></i>
                     Rasmus Bundsgaard
                 </a>
