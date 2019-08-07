@@ -11,9 +11,24 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+mix.autoload({
+    jquery: ['$', 'window.jQuery'],
+    vue: ['Vue', 'window.Vue']
+});
+
+mix.js('resources/assets/js/app.js', 'public/assets/js/mix.js')
+   .sass('resources/assets/sass/app.scss', 'public/assets/css/mix.css')
+   .extract(['vue', 'lodash', 'bootstrap']);
 
 if (mix.inProduction()) {
-    mix.version();
+    mix.version()
+       .options({
+        uglify: {
+            uglifyOptions: {
+                compress: {
+                    drop_console: true,
+                },
+            },
+        },
+    });
 }
