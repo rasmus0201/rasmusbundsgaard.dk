@@ -7,7 +7,7 @@
     <div id="particles-overlay"></div>
     <div class="container">
         <div class="row">
-            <div class="col-md-12 text-center white">
+            <div class="col-md-12 text-center text-white">
                 <h1 class="display-3 text-uppercase">Rasmus Bundsgaard</h1>
                 <h4>Mit online portfolio og CV</h4>
                 <p>Her finder du tidligere opgaver, erfaringer, uddannelse og oplysninger om mig.</p>
@@ -405,10 +405,10 @@
 <section id="contact" class="section full-height">
 
     <div class="wrap">
-        <h3 class="display-3 text-uppercase white">
+        <h3 class="display-3 text-uppercase text-white">
             Kontakt mig
         </h3>
-        <p class="cta-subtitle white">Jeg er online 24/7 (næsten).</p>
+        <p class="cta-subtitle text-white">Jeg er online 24/7 (næsten).</p>
 
         <div class="row mt-5">
             <div class="contact-btn col-lg-3 col-md-6 col-sm-12">

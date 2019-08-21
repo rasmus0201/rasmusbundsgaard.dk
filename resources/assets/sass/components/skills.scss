@@ -1,0 +1,17 @@
+.skillset-type {
+    transform: rotate(-90deg);
+    display: block;
+    z-index: 999;
+    padding: 10px;
+    border: dashed 2px #ccc;
+    color: #ccc;
+    text-transform: uppercase;
+    text-align: center;
+
+    @media (max-width: 767px) {
+        transform: rotate(0);
+        width: 100%;
+        padding: 5px 8px;
+        margin: 20px 0;
+    }
+}

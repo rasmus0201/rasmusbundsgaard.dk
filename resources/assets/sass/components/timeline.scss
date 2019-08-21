@@ -1,0 +1,111 @@
+.timeline {
+    position: relative;
+
+    &:before {
+        background: #ededed;
+        background: linear-gradient(to bottom, #ededed 1%, #ededed 85%, #fafafa 100%);
+        bottom: 0;
+        content: "";
+        left: 18px;
+        position: absolute;
+        top: 0;
+        width: 3px;
+        height: 100%;
+    }
+
+    &:after {
+        display: inline-block;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        background: #ffffff;
+        border: 3px solid #efefef;
+        border-radius: 50%;
+        font-family: Font Awesome\ 5 Pro;
+        top: -50px;
+        left: -5px;
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        text-align: center;
+        color: #333333;
+        font-size: 20px;
+        line-height: 45px;
+    }
+
+    &.left:before {
+        left: auto;
+        right: 18px;
+    }
+
+    &.left:after {
+        left: auto;
+        right: -5px;
+    }
+
+    &.education {
+        &:after {
+            content: '\f19d';
+        }
+
+        @media (max-width: 767px) {
+            margin-top: 75px;
+        }
+    }
+
+    &.experience:after {
+        content: '\f0b1';
+    }
+
+    &.left .exp {
+        padding-left: 0;
+        padding-right: 50px;
+        text-align: right;
+
+        &:after {
+            left: auto;
+            right: 12px;
+        }
+    }
+
+    .exp {
+        padding-left: 50px;
+        padding-top: 20px;
+        position: relative;
+        margin-bottom: 10px;
+
+        &:after {
+            background: #007bff;
+            border: 3px solid #f8f9fa;
+            content: "";
+            height: 15px;
+            left: 12px;
+            position: absolute;
+            text-align: center;
+            top: 24px;
+            width: 15px;
+            border-radius: 50%;
+        }
+
+        .hgroup {
+            margin-bottom: 5px;
+
+            h4 {
+                font-size: 18px;
+                text-transform: none;
+            }
+
+            h6 {
+                text-transform: none;
+                font-size: 14px;
+                color: #666666;
+
+                i {
+                    color: #cccccc;
+                    margin-right: 5px;
+                }
+            }
+        }
+    }
+}
