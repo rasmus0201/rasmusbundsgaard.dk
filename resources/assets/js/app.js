@@ -1,21 +1,40 @@
 import Vue from 'vue';
-import _ from 'lodash';
 
-require('bootstrap');
+Vue.mixin({
+    data: function() {
+        return {
+            get Bundsgaard() {
+                return window.Bundsgaard;
+            }
+        }
+    }
+});
 
-// Autoload components
-const files = require.context('./components', true, /\.vue$/i);
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+require('./bootstrap');
+require('./backup');
+require('./interactive-background');
 
-window.axios = require('axios');
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+require('./directives/resize');
+require('./directives/track');
 
-let token = document.head.querySelector('meta[name="csrf-token"]');
+{
+    const files = require.context('./components', true, /\.vue$/i);
+    files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+}
 
-if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+{
+    const files = require.context('./sections', true, /\.vue$/i);
+    files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 }
 
 const app = new Vue({
+    data() {
+        return {
+            test: 'hestemad'
+        }
+    },
+    mounted() {
+        this.$el.classList.remove('v-hide');
+    },
     el: '#app',
 });

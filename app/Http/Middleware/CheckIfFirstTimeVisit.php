@@ -23,6 +23,10 @@ class CheckIfFirstTimeVisit
      */
     public function handle($request, Closure $next)
     {
+        if (!$this->ga->applyExperiments()) {
+            return $next($request);
+        }
+
         if ($this->ga->hasCookie()) {
             return $next($request);
         }
