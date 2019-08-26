@@ -28,11 +28,6 @@ require('./directives/track');
 }
 
 const app = new Vue({
-    data() {
-        return {
-            test: 'hestemad'
-        }
-    },
     mounted() {
         this.$el.classList.remove('v-hide');
     },
