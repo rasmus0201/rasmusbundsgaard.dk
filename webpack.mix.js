@@ -12,7 +12,7 @@ const mix = require('laravel-mix');
  */
 
 mix.autoload({
-    jquery: ['$', 'window.jQuery', 'jQuery'],
+    // jquery: ['$', 'window.jQuery', 'jQuery'],
     vue: ['Vue', 'window.Vue']
 });
 
