@@ -12,13 +12,16 @@ const mix = require('laravel-mix');
  */
 
 mix.autoload({
-    jquery: ['$', 'window.jQuery'],
+    // jquery: ['$', 'window.jQuery', 'jQuery'],
     vue: ['Vue', 'window.Vue']
 });
 
-mix.js('resources/assets/js/app.js', 'public/assets/js/mix.js')
-   .sass('resources/assets/sass/app.scss', 'public/assets/css/mix.css')
-   .extract(['vue', 'lodash', 'bootstrap']);
+mix.js('resources/assets/js/app.js', 'public/assets/js')
+   .sass('resources/assets/sass/app.scss', 'public/assets/css')
+   .options({
+       processCssUrls: false
+   })
+   // .extract(['vue', 'lodash', 'bootstrap']);
 
 if (mix.inProduction()) {
     mix.version()

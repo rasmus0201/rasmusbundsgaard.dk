@@ -17,32 +17,49 @@ class GoogleAnalyticsExperiments
         $this->config = config('services.ga.experiments');
     }
 
+    public function applyExperiments()
+    {
+        $shouldApply = array_filter($this->config, function($experiment) {
+            return !is_null($experiment['id']);
+        });
+
+        return !!count($shouldApply);
+    }
+
     public function experiment()
     {
-        if (Cookie::has('ga_experiments')) {
-            $userExperiments = Cookie::get(self::COOKIE);
-
-            foreach ($userExperiments as $route => $experiment) {
-                if (!isset($this->config[$route])) {
-                    continue;
-                }
-
-                if ($route != $this->request->route()->getName()) {
-                    continue;
-                }
-
-                $ga = $this->config[$route];
-                $variantId = $ga['variant'] = $experiment['variant'];
-
-                if ($variantId > 0) {
-                    $ga['view'] .= '-' . $variantId;
-                }
-
-                return $ga;
-            }
+        if (!$this->applyExperiments()) {
+            return;
         }
 
-        return;
+        if (!Cookie::has('ga_experiments')) {
+            return;
+        }
+
+        $userExperiments = Cookie::get(self::COOKIE);
+
+        foreach ($userExperiments as $route => $experiment) {
+            if (!isset($this->config[$route])) {
+                continue;
+            }
+
+            if (!$experiment['id']) {
+                continue;
+            }
+
+            if ($route != $this->request->route()->getName()) {
+                continue;
+            }
+
+            $ga = $this->config[$route];
+            $variantId = $ga['variant'] = $experiment['variant'];
+
+            if ($variantId > 0) {
+                $ga['view'] .= '-' . $variantId;
+            }
+
+            return $ga;
+        }
     }
 
     public function hasCookie()
@@ -55,6 +72,10 @@ class GoogleAnalyticsExperiments
         $uid = str_random(32);
         $value = [];
         foreach ($this->config as $route => $experiment) {
+            if (!$experiment['id']) {
+                continue;
+            }
+
             $range = $experiment['variants'];
             $value[$route] = [
                 'uid' => $uid,
