@@ -151,9 +151,9 @@
         <bundsgaard-sidebar></bundsgaard-sidebar>
         <bundsgaard-navigation></bundsgaard-navigation>
 
-        <div class="content">
+        <bundsgaard-content>
             @yield('content')
-        </div>
+        </bundsgaard-content>
     </div>
 
     <script src="{{ mix('assets/js/app.js') }}"></script>
