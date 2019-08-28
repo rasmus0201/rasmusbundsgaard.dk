@@ -1,21 +1,71 @@
 import Vue from 'vue';
-import _ from 'lodash';
+import VueScrollTo from 'vue-scrollto';
+import EventBus from './event-bus';
 
-require('bootstrap');
+Vue.use(VueScrollTo, {
+    container: 'body',
+    duration: 200,
+    easing: 'ease-in-out',
+    offset: 0,
+});
 
-// Autoload components
-const files = require.context('./components', true, /\.vue$/i);
-files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+Vue.mixin({
+    data: function() {
+        return {
+            get Bundsgaard() {
+                return window.Bundsgaard;
+            }
+        }
+    }
+});
 
-window.axios = require('axios');
-window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
+require('./bootstrap');
+require('./interactive-background');
+require('./directives/resize');
+require('./directives/track');
 
-let token = document.head.querySelector('meta[name="csrf-token"]');
+{
+    const files = require.context('./components', true, /\.vue$/i);
+    files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+}
 
-if (token) {
-    window.axios.defaults.headers.common['X-CSRF-TOKEN'] = token.content;
+{
+    const files = require.context('./sections', true, /\.vue$/i);
+    files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
 }
 
 const app = new Vue({
+    mounted() {
+        this.$el.classList.remove('v-hide');
+        this.maybeUpdateActiveNavItem();
+        this.maybeUpdateNavScrollbarVisibility();
+
+        window.addEventListener('keyup', this.maybeCloseNav);
+        window.addEventListener('scroll', this.maybeUpdateActiveNavItem);
+        window.addEventListener('resize', this.maybeUpdateNavScrollbarVisibility);
+
+        console.log('👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋');
+        console.log('Nysgerrig?');
+        console.log('Skriv til mig på rasmus@it-lease.dk');
+        console.log('----');
+        console.log('Ver: 2.0.0');
+        console.log('Frontend: Vue2, FontAwesome 5, Bootstrap 4, Particles.js, Google Fonts');
+        console.log('Backend: NGINX, PHP7, Laravel');
+    },
+    methods: {
+        maybeCloseNav(event) {
+            if (event.keyCode == 27) {
+                EventBus.$emit('navigation:close');
+            }
+        },
+
+        maybeUpdateActiveNavItem: _.throttle(() => {
+            EventBus.$emit('navigation:update-active');
+        }, 50),
+
+        maybeUpdateNavScrollbarVisibility: _.throttle(() => {
+            EventBus.$emit('navigation:update-scrollbar');
+        }, 50)
+    },
     el: '#app',
 });
