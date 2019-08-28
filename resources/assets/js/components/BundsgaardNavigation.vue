@@ -119,8 +119,9 @@
             updateScrollbar() {
                 const maxHeight = this.$refs['navigation'].getBoundingClientRect().height;
                 const menuHeight = this.$refs['menu'].scrollHeight + 50;
+                const bodyWidth = window.innerWidth;
 
-                this.hasScrollbar = (menuHeight > maxHeight);
+                this.hasScrollbar = (menuHeight > maxHeight && bodyWidth > 600);
             }
         }
     }
