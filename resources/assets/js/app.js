@@ -1,4 +1,13 @@
 import Vue from 'vue';
+import VueScrollTo from 'vue-scrollto';
+import EventBus from './event-bus';
+
+Vue.use(VueScrollTo, {
+    container: 'body',
+    duration: 200,
+    easing: 'ease-in-out',
+    offset: 0,
+});
 
 Vue.mixin({
     data: function() {
@@ -11,9 +20,7 @@ Vue.mixin({
 });
 
 require('./bootstrap');
-require('./backup');
 require('./interactive-background');
-
 require('./directives/resize');
 require('./directives/track');
 
@@ -30,6 +37,35 @@ require('./directives/track');
 const app = new Vue({
     mounted() {
         this.$el.classList.remove('v-hide');
+        this.maybeUpdateActiveNavItem();
+        this.maybeUpdateNavScrollbarVisibility();
+
+        window.addEventListener('keyup', this.maybeCloseNav);
+        window.addEventListener('scroll', this.maybeUpdateActiveNavItem);
+        window.addEventListener('resize', this.maybeUpdateNavScrollbarVisibility);
+
+        console.log('👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋');
+        console.log('Nysgerrig?');
+        console.log('Skriv til mig på rasmus@it-lease.dk');
+        console.log('----');
+        console.log('Ver: 2.0.0');
+        console.log('Frontend: Vue2, FontAwesome 5, Bootstrap 4, Particles.js, Google Fonts');
+        console.log('Backend: NGINX, PHP7, Laravel');
+    },
+    methods: {
+        maybeCloseNav(event) {
+            if (event.keyCode == 27) {
+                EventBus.$emit('navigation:close');
+            }
+        },
+
+        maybeUpdateActiveNavItem: _.throttle(() => {
+            EventBus.$emit('navigation:update-active');
+        }, 50),
+
+        maybeUpdateNavScrollbarVisibility: _.throttle(() => {
+            EventBus.$emit('navigation:update-scrollbar');
+        }, 50)
     },
     el: '#app',
 });

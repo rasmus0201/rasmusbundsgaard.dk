@@ -4,8 +4,8 @@
             <img class="sidebar__logo img-fluid" :src="Bundsgaard.logo" alt="Rasmus Bundsgaard Logo">
         </a>
         <div class="sidebar__menu">
-            <input class="menu__checkbox" id="sidebar__menu-checkbox-toggle" type="checkbox">
-            <label class="menu__toggle" for="sidebar__menu-checkbox-toggle">
+            <input class="menu__checkbox" type="checkbox" :checked="navState">
+            <label class="menu__toggle" @click="toggleNav">
                 <span class="menu__burger"></span>
             </label>
         </div>
@@ -29,7 +29,13 @@
     </div>
 </template>
 <script>
+    import EventBus from '../event-bus.js';
     export default {
+        data() {
+            return {
+                navState: false
+            }
+        },
         computed: {
             formattedPhone: function() {
                 return 'tel:+45' + this.Bundsgaard.social.phone;
@@ -37,6 +43,21 @@
             formattedMail: function() {
                 return 'mailto:' + this.Bundsgaard.social.mail;
             },
+        },
+
+        mounted() {
+            EventBus.$on('navigation:close', this.closeNav);
+        },
+
+        methods: {
+            closeNav() {
+                this.navState = false;
+            },
+
+            toggleNav() {
+                this.navState = !this.navState;
+                EventBus.$emit('navigation:toggle');
+            }
         }
     }
 </script>
