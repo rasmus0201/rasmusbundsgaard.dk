@@ -41,6 +41,7 @@ const app = new Vue({
 
         window.addEventListener('keyup', this.maybeCloseNav);
         window.addEventListener('scroll', this.maybeUpdateActiveNavItem);
+        window.addEventListener('resize', this.maybeUpdateActiveNavItem);
         window.addEventListener('resize', this.maybeUpdateNavScrollbarVisibility);
 
         console.log('👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋');
