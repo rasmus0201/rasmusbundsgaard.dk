@@ -1,5 +1,6 @@
 body.dark-mode {
-    background-color: theme-color('dark');
+    $dark-mode-bg-color:  darken(theme-color('dark'), 15%);
+    background-color: $dark-mode-bg-color;
     color: $gray-200;
 
     .text-white {
@@ -7,7 +8,7 @@ body.dark-mode {
     }
 
     .sidebar {
-        background-color: theme-color('dark') !important;
+        background-color: $dark-mode-bg-color !important;
 
         &__logo {
             filter: invert(1);
@@ -19,7 +20,7 @@ body.dark-mode {
     }
 
     .navigation--active {
-        background-color: theme-color('dark') !important;
+        background-color: $dark-mode-bg-color !important;
     }
 
     .menu__burger:before,
