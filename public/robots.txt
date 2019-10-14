@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /shader
-Disallow: /templateparser
-Disallow: /todo
-Disallow: /julekalender
+Disallow:
