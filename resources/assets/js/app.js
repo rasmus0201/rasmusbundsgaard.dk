@@ -21,7 +21,6 @@ Vue.mixin({
 
 require('./bootstrap');
 require('./interactive-background');
-require('./directives/resize');
 require('./directives/track');
 
 {
@@ -46,7 +45,7 @@ const app = new Vue({
 
         console.log('👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋👋');
         console.log('Nysgerrig?');
-        console.log('Skriv til mig på rasmus@it-lease.dk');
+        console.log('Skriv til mig på bundsgaard.rasmus@gmail.com');
         console.log('----');
         console.log('Ver: 2.0.0');
         console.log('Frontend: Vue2, FontAwesome 5, Bootstrap 4, Particles.js, Google Fonts');
