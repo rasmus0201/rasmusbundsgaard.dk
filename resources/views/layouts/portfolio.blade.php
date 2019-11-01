@@ -100,9 +100,10 @@
                     </a>`,
                 },
                 {
-                    url: '{{ asset('assets/images/case-fk.png') }}',
-                    title: 'Fridakristensen.dk',
-                    subtitle: 'Hjemmeside m. integreret bookingsystem fra Admind.dk',
+                    url: '{{ asset('assets/images/case-le.png') }}',
+                    title: 'Turneringsalgoritme på leagues.gg',
+                    subtitle: `Udvikling af både single elimination og double elimination turneringer. Kan ses på
+                    <a href="https://leagues.gg/tournaments/lol" target="_blank" class="link">Klik > Active tournaments > Brackets</a>`,
                 },
                 {
                     url: '{{ asset('assets/images/case-pk.jpg') }}',
