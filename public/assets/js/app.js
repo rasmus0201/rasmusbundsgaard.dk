@@ -22874,12 +22874,12 @@ var render = function() {
                 attrs: {
                   tag: "a",
                   rounded: true,
-                  href: _vm.Bundsgaard.social.facebook,
+                  href: _vm.Bundsgaard.social.github,
                   target: "_blank"
                 }
               },
               [
-                _c("i", { staticClass: "fab fa-facebook-f" }),
+                _c("i", { staticClass: "fab fa-github" }),
                 _vm._v(
                   "\n                    " +
                     _vm._s(_vm.name) +

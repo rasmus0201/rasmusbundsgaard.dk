@@ -2,8 +2,9 @@
 
 namespace App\External;
 
-use Cookie;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Cookie;
+use Illuminate\Support\Str;
 
 class GoogleAnalyticsExperiments
 {
@@ -19,7 +20,7 @@ class GoogleAnalyticsExperiments
 
     public function applyExperiments()
     {
-        $shouldApply = array_filter($this->config, function($experiment) {
+        $shouldApply = array_filter($this->config, function ($experiment) {
             return !is_null($experiment['id']);
         });
 
@@ -69,7 +70,7 @@ class GoogleAnalyticsExperiments
 
     public function getCookie()
     {
-        $uid = str_random(32);
+        $uid = Str::random(32);
         $value = [];
         foreach ($this->config as $route => $experiment) {
             if (!$experiment['id']) {
@@ -86,7 +87,7 @@ class GoogleAnalyticsExperiments
         return Cookie::make(
             self::COOKIE,
             $value,
-            $min = 60*24*365, // 1 year
+            $min = 60 * 24 * 365, // 1 year
             '/',
             $this->request->getHttpHost(),
             $this->request->secure(),
