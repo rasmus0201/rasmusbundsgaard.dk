@@ -13,9 +13,6 @@
             <a v-gclick="'contact:inbound'" :href="formattedMail">
                 <i class="fal fa-envelope"></i>
             </a>
-            <a v-gclick="'contact:inbound'" :href="formattedPhone">
-                <i class="fal fa-phone"></i>
-            </a>
             <a v-gclick="'contact:outbound'" :href="Bundsgaard.social.facebook" target="_blank">
                 <i class="fab fa-facebook-f"></i>
             </a>
@@ -37,9 +34,6 @@
             }
         },
         computed: {
-            formattedPhone: function() {
-                return 'tel:+45' + this.Bundsgaard.social.phone;
-            },
             formattedMail: function() {
                 return 'mailto:' + this.Bundsgaard.social.mail;
             },

@@ -7,25 +7,25 @@
             <p class="text-white">Jeg er online 24/7 (næsten).</p>
 
             <div class="row mt-5">
-                <div class="contact-option mb-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="contact-option mb-3 col-12">
                     <b-button tag="a" :rounded="true" :href="'mailto:' + Bundsgaard.social.mail" v-gclick="'contact:inbound'" class="px-4">
                         <i class="fal fa-envelope"></i>
                         {{ Bundsgaard.social.mail }}
                     </b-button>
                 </div>
-                <div class="contact-option mb-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="contact-option mb-3 col-12">
                     <b-button tag="a" :rounded="true" v-gclick="'contact:outbound'" :href="Bundsgaard.social.facebook" class="px-4" target="_blank">
                         <i class="fab fa-facebook-f"></i>
                         {{ name }}
                     </b-button>
                 </div>
-                <div class="contact-option mb-3 col-lg-6 col-md-6 col-sm-12">
-                    <b-button tag="a" :rounded="true" v-gclick="'contact:inbound'" :href="'tel:+45' + Bundsgaard.social.phone" class="px-4">
-                        <i class="fal fa-phone"></i>
-                        {{ phone }}
+                <div class="contact-option mb-3 col-12">
+                    <b-button tag="a" :rounded="true" v-gclick="'contact:outbound'" :href="Bundsgaard.social.facebook" class="px-4" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                        {{ name }}
                     </b-button>
                 </div>
-                <div class="contact-option mb-3 col-lg-6 col-md-6 col-sm-12">
+                <div class="contact-option mb-3 col-12">
                     <b-button tag="a" :rounded="true" v-gclick="'contact:outbound'" :href="Bundsgaard.social.linkedin" class="px-4" target="_blank">
                         <i class="fab fa-linkedin"></i>
                         {{ name }}
@@ -43,10 +43,6 @@
         computed: {
             name: function() {
                 return Bundsgaard.firstName + ' ' + Bundsgaard.middleName;
-            },
-
-            phone: function () {
-                return Bundsgaard.social.phone.replace(/(.{2})/g, '$1 ');
             }
         }
     }

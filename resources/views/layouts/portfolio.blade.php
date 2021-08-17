@@ -68,7 +68,6 @@
             middleName: 'Bundsgaard',
             lastName: 'Sørensen',
             social: {
-                phone: '31755650',
                 mail: 'bundsgaard.rasmus@gmail.com',
                 github: 'https://github.com/rasmus0201',
                 linkedin: 'https://www.linkedin.com/in/rasmus-bundsgaard/',
