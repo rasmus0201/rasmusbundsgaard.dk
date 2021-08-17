@@ -20,8 +20,8 @@
                     </b-button>
                 </div>
                 <div class="contact-option mb-3 col-12">
-                    <b-button tag="a" :rounded="true" v-gclick="'contact:outbound'" :href="Bundsgaard.social.facebook" class="px-4" target="_blank">
-                        <i class="fab fa-facebook-f"></i>
+                    <b-button tag="a" :rounded="true" v-gclick="'contact:outbound'" :href="Bundsgaard.social.github" class="px-4" target="_blank">
+                        <i class="fab fa-github"></i>
                         {{ name }}
                     </b-button>
                 </div>
