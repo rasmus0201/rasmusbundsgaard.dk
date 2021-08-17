@@ -59,6 +59,7 @@
             $diff = $bornDate->diff($now);
             $yop = $startProgramming->diff($now);
         @endphp
+
         window.Bundsgaard = {
             url: '{{ URL::to('/') }}',
             logo: '{{ asset('assets/images/logo-rb.png') }}',
