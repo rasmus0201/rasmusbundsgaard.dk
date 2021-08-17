@@ -16,12 +16,11 @@ mix.autoload({
     vue: ['Vue', 'window.Vue']
 });
 
-mix.js('resources/assets/js/app.js', 'public/assets/js')
+mix.js('resources/assets/js/app.js', 'public/assets/js').vue({ version: 2 })
    .sass('resources/assets/sass/app.scss', 'public/assets/css')
    .options({
        processCssUrls: false
    })
-   // .extract(['vue', 'lodash', 'bootstrap']);
 
 if (mix.inProduction()) {
     mix.version()
