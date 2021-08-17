@@ -14,10 +14,6 @@
                                 <i class="fal fa-envelope"></i>
                                 {{ Bundsgaard.social.mail }}
                             </b-button>
-                            <b-button tag="a" :rounded="true" v-gclick="'contact:inbound'" class="px-4" :href="'tel:+45' + Bundsgaard.social.phone">
-                                <i class="fal fa-phone"></i>
-                                {{ phone }}
-                            </b-button>
                         </div>
                     </div>
                 </div>
@@ -37,10 +33,6 @@ export default {
     computed: {
         name: function() {
             return Bundsgaard.firstName + ' ' + Bundsgaard.middleName;
-        },
-
-        phone: function () {
-            return Bundsgaard.social.phone.replace(/(.{2})/g, '$1 ');
         }
     }
 }
