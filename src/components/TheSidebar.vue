@@ -40,7 +40,7 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { BundsgaardSiteData as Bundsgaard } from "@/data";
+import { BundsgaardSiteData as Bundsgaard } from "@/bundsgaard-data";
 import { useNavigationStore } from "@/store/navigation";
 
 const navigationStore = useNavigationStore();

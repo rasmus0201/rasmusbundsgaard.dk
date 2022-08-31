@@ -41,7 +41,7 @@
 <script setup lang="ts">
 import { ref } from "vue";
 
-import { BundsgaardSiteData as Bundsgaard } from "@/data";
+import { BundsgaardSiteData as Bundsgaard } from "@/bundsgaard-data";
 
 const categories = ref([
   {

@@ -16,7 +16,6 @@
     "bootstrap": "^5.2.0",
     "date-fns": "^2.29.2",
     "lodash-es": "^4.17.21",
-    "particles.js": "^2.0.0",
     "pinia": "^2.0.21",
     "vue": "^3.2.37",
     "vue-scrollto": "^2.20.0"

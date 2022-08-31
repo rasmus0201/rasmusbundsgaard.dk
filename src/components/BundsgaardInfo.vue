@@ -125,7 +125,7 @@
 <script setup lang="ts">
 import { reactive } from "vue";
 
-import { BundsgaardSiteData as Bundsgaard } from "@/data";
+import { BundsgaardSiteData as Bundsgaard } from "@/bundsgaard-data";
 
 const cv = reactive({
   employment: [

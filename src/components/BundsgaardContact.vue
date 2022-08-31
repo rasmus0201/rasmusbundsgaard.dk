@@ -65,9 +65,9 @@
 <script setup lang="ts">
 import { computed } from "vue";
 
-import { BundsgaardSiteData as Bundsgaard } from "@/data";
+import { BundsgaardSiteData as Bundsgaard } from "@/bundsgaard-data";
 
 import BButton from "./BButton.vue";
 
-const name = computed(() => Bundsgaard.firstName + " " + Bundsgaard.middleName);
+const name = computed(() => `${Bundsgaard.firstName} ${Bundsgaard.middleName}`);
 </script>

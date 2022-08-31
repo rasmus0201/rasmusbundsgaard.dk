@@ -19,6 +19,7 @@
             class="img"
             :style="{ 'background-image': 'url(' + reference.url + ')' }"
           ></span>
+
           <span class="text">
             <span class="title" v-html="reference.title"></span>
             <span class="subtitle" v-html="reference.subtitle"></span>
@@ -51,7 +52,7 @@
 </template>
 
 <script setup lang="ts">
-import { BundsgaardSiteData as Bundsgaard } from "@/data";
+import { BundsgaardSiteData as Bundsgaard } from "@/bundsgaard-data";
 
 import BButton from "./BButton.vue";
 </script>
