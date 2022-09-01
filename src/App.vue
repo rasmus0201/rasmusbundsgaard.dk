@@ -1,8 +1,8 @@
 <template>
   <div :class="{ 'dark-mode': darkModeStore.enabled }">
     <TheSidebar />
-    <TheNavigation />
-    <TheContent>
+    <TheNavigation :active-item="activeSection" />
+    <TheContent id="scrollArea">
       <BundsgaardStart id="home" />
       <BundsgaardInfo id="info" />
       <BundsgaardWork id="portfolio" />
@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import { onMounted, reactive } from "vue";
+import { onMounted, reactive, ref } from "vue";
 
 import BundsgaardContact from "@/components/BundsgaardContact.vue";
 import BundsgaardInfo from "@/components/BundsgaardInfo.vue";
@@ -25,13 +25,15 @@ import TheNavigation from "@/components/TheNavigation.vue";
 import TheSidebar from "@/components/TheSidebar.vue";
 import { useDarkModeStore } from "@/store/darkMode";
 
+import { onIntersection } from "./helpers";
+
 const darkModeStore = useDarkModeStore();
 
+// Easter-egg!
 const easterEgg = reactive({
   cursor: 0,
   code: "dark"
 });
-
 const maybeActivateEasterEgg = (e: KeyboardEvent) => {
   // If not the typed char is not the next character
   // then reset the cursor
@@ -48,8 +50,18 @@ const maybeActivateEasterEgg = (e: KeyboardEvent) => {
     easterEgg.cursor = 0;
   }
 };
+onMounted(() => window.addEventListener("keyup", maybeActivateEasterEgg));
 
-onMounted(() => {
-  window.addEventListener("keyup", maybeActivateEasterEgg);
-});
+// Navigation active section item.
+const activeSection = ref<string>("#home");
+const initIntersection = () => {
+  document
+    .querySelectorAll("#home, #info, #portfolio, #skillset, #contact")
+    .forEach((i: Element) => {
+      onIntersection(i as HTMLElement, 0.33, (e) => {
+        activeSection.value = e.target.id;
+      });
+    });
+};
+onMounted(() => initIntersection());
 </script>
