@@ -8,7 +8,6 @@
         <div class="contact-option mb-3 col-12">
           <BButton
             tag="a"
-            :rounded="true"
             :href="'mailto:' + Bundsgaard.social.mail"
             class="px-4"
           >
@@ -19,7 +18,6 @@
         <div class="contact-option mb-3 col-12">
           <BButton
             tag="a"
-            :rounded="true"
             :href="Bundsgaard.social.facebook"
             class="px-4"
             target="_blank"
@@ -31,7 +29,6 @@
         <div class="contact-option mb-3 col-12">
           <BButton
             tag="a"
-            :rounded="true"
             :href="Bundsgaard.social.github"
             class="px-4"
             target="_blank"
@@ -43,7 +40,6 @@
         <div class="contact-option mb-3 col-12">
           <BButton
             tag="a"
-            :rounded="true"
             :href="Bundsgaard.social.linkedin"
             class="px-4"
             target="_blank"

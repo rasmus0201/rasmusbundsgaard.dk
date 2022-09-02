@@ -40,7 +40,6 @@
             :href="recommendation.url"
             target="_blank"
             :block="true"
-            :rounded="true"
             class="py-3"
           >
             Se anbefaling fra {{ recommendation.name }}

@@ -15,7 +15,6 @@
             <div class="contact-option col-12 text-center">
               <BButton
                 tag="a"
-                :rounded="true"
                 class="px-4 me-2 mb-2 mb-lg-0"
                 :href="'mailto:' + Bundsgaard.social.mail"
               >
