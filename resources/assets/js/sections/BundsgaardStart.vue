@@ -25,7 +25,7 @@
 export default {
     data() {
         return {
-            title: 'Mit online portfolio og CV',
+            title: 'Mit online CV',
             subtitle: 'Her finder du tidligere opgaver, erfaringer, uddannelse og oplysninger om mig.'
         };
     },

@@ -16,7 +16,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Rasmus Bundsgaard - Portfolio & Resumé Website</title>
+    <title>Rasmus Bundsgaard - CV & Resumé Website</title>
 
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:200,300,400,500,600,700&amp;subset=latin-ext" rel="stylesheet">
