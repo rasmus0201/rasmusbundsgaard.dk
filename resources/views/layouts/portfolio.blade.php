@@ -76,22 +76,22 @@
             },
             references: [
                 {
-                    url: '{{ asset('assets/images/case-pp.jpg') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Poul Pava',
                     subtitle: 'Diverse rettelser, overlay masonry',
                 },
                 {
-                    url: '{{ asset('assets/images/case-ju.png') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Justdeal.dk',
                     subtitle: 'Optimeringer. Rettelser på bl.a. admin-, partner- og medarbejder panel. Responsiv',
                 },
                 {
-                    url: '{{ asset('assets/images/case-mv.png') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Maschavangshop.dk',
                     subtitle: 'Rettelser, filtrering af kategorier, responsiv',
                 },
                 {
-                    url: '{{ asset('assets/images/case-sw.png') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Slikworld.dk',
                     subtitle: `Webshop, mulighed for opretning af abonnementer, skræddersyet modul til Coolrunner.dk
                     <a href="https://github.com/rasmus0201/woocommerce-coolrunner" target="_blank" class="link github">
@@ -100,18 +100,18 @@
                     </a>`,
                 },
                 {
-                    url: '{{ asset('assets/images/case-le.png') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Turneringsalgoritme på leagues.gg',
                     subtitle: `Udvikling af både single elimination og double elimination turneringer. Kan ses på
                     <a href="https://leagues.gg/tournaments/lol" target="_blank" class="link">Klik > Active tournaments > Brackets</a>`,
                 },
                 {
-                    url: '{{ asset('assets/images/case-pk.jpg') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Peugeotkvaern.dk',
                     subtitle: 'Responsiv, rettelser, menu, optimering',
                 },
                 {
-                    url: '{{ asset('assets/images/theme-memoo.png') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Memoo.dk',
                     subtitle: `Udvikling af tema fra bunden. Bruges til deres kunder.
                     <a href="https://github.com/rasmus0201/theme-memoo" target="_blank" class="link github">
@@ -120,13 +120,13 @@
                     </a>`,
                 },
                 {
-                    url: '{{ asset('assets/images/case-op.jpg') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Opskrifter.dk',
                     subtitle: `Diverse rettelser og optimering.
                     <a href="https://opskrifter.dk/" target="_blank" class="link">Se siden</a>`,
                 },
                 {
-                    url: '{{ asset('assets/images/case-ap.png') }}',
+                    url: '{{ asset('assets/images/case.png') }}',
                     title: 'Ap-pe.dk',
                     subtitle: `Dynamisk og interaktiv prisberegner. Rettelser til øvrige dele af siden.
                     <a href="https://github.com/rasmus0201/wp-calculator" target="_blank" class="link github">
